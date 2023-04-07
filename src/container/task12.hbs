@@ -1,0 +1,116 @@
+<div> 
+   <main>
+      <section>
+       
+                <div class="card">
+                   <br>
+                   <br>
+                <div class="card">
+                <div class="card-body">
+   
+             {{#with heading.main}}
+              <h1>Java Script</h1>
+             <br>
+             <div><b>Text:</b> {{text}} </div> 
+             <br>
+             {{/with}}
+            
+             <button type="button" class="btn btn-primary">Open page</button>
+             <button type="button" class="btn btn-outline-primary">Add to cart</button>
+              </div>
+              </div>
+             <br>
+             <br>
+
+              <div class="card">
+              <div class="card-body">
+
+             {{#with heading.second}}
+             
+             <h2>Stack Overflow</h2>
+             <div><b>Text:</b> {{text}}</div>
+             {{/with}}
+             <br>
+             <button type="button" class="btn btn-secondary">Open page</button>
+             <button type="button" class="btn btn-outline-secondary">Add to cart</button>
+            
+             </div>
+              </div>
+              <br>
+              <br>
+
+
+               <div class="card">
+               <div class="card-body">
+             {{#with heading.second}}
+             
+             <h3>JavaScript Weekly</h3>
+             <div><b>Text:</b> {{text}}</div>
+             {{/with}}
+             <br>
+             <button type="button" class="btn btn-dark">Open page</button>
+             <button type="button" class="btn btn-outline-dark">Add to cart</button> 
+            
+            </div>
+            </div>
+            </div>
+
+            <br>
+            <br>
+
+             <div class="card">
+              
+              <div class="card-body">
+              <div class="display-1">HTML</div>
+              <hr>
+              <br>
+
+             
+              {{#with nested_display.children_display}}
+
+               <div class="display-4">Outdated HTML tags</div>
+             <div><b>Text:</b> {{text}} </div> 
+             <br>
+               {{/with}}
+               <button type="button" class="btn btn-outline-warning">Орen</button>
+            
+            <br>
+            <br>
+            <hr>
+
+             <h6>Sections</h6>
+             <br>
+             <button type="button" class="btn btn-info">Learn more</button>
+              </div>
+              </div>
+              <br>
+
+
+              <div class="card">
+              <div class="card-body">
+              
+              <br>
+             
+              {{#with paragraph}}
+              
+              <h6>PARAGRAPH</h6>
+              <div class="display-7">paragraph</div>
+              <br>
+              <div><b>Title:</b> {{title}} </div> 
+              <div><b>Text:</b> {{text}} </div> 
+              <br>
+               {{/with}}
+
+              {{#with paragraph.button}}
+               <li>
+                <li><a href="https://google.com">Github</a></li>
+                </li>
+                {{/with}}
+                <li><a href="https://github.com/">Github</a></li>
+                <li><a href="https://getbootstrap.com/">Bootstrap</a> </li>   
+               </div>
+              </div>
+         </ul>
+      </section>
+   </main>
+</div>

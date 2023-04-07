@@ -971,18 +971,19 @@ router.get('/bootstrap', function (req, res) {
 // router.get Створює нам один ентпоїнт
 
 //           ↙ тут вводимо шлях (PATH) до сторінки
-router.get('/task21', function (req, res) {
+router.get('/task12', function (req, res) {
 	// res.render генерує нам HTML сторінку
   
 	//            ↙ cюди вводимо назву файлу з сontainer
-	res.render('task21', {
+	res.render('task12', {
 
-	layout: `task21`,
+	layout: `task12`,
 	
 	  heading: {
 		main: {
 		  title: 'JavaScript',
 		  text: 'JavaScript is a popular high-level, dynamic, and interpreted programming language.',
+		
 		  button_text: {
 			solid: 'Open page',
 			outline: 'Add to cart',
@@ -991,7 +992,7 @@ router.get('/task21', function (req, res) {
 		second: {
 		  title: 'Stack Overflow',
 		  text: 'First-class functions',
-		  button_text: {
+		button_text: {
 			solid: 'Open page',
 			outline: 'Add to cart',
 		  },
@@ -1007,7 +1008,8 @@ router.get('/task21', function (req, res) {
 	  },
 	  nested_display: {
 		title: 'HTML',
-		children_display: {
+
+	 children_display: {
 		  title: 'Outdated HTML tags',
 		  text: 'tags that have been identified as deprecated and not recommended for use in HTML version 5',
 		  button: {
