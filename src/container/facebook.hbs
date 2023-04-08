@@ -7,41 +7,55 @@
             {{#each users}}
             
             <br>
+               <ul>
+               <div><i>Users:</i></div> 
                <div><b>ID:</b> {{id}} </div>        
                <div><b>Name:</b> {{name}} </div>
                <div><b>Gender:</b> {{gender}} </div> 
                <div><b>Age:</b> {{age}} </div> 
+               
                <br>
+               
+               
+               
 
 
                 {{#each friends}}
-              
+               
+              <div><i>Friends:</i></div> 
                <div><b>ID:</b> {{id}} </div>        
                <div><b>Name:</b> {{name}} </div> 
                <div><b>Gender:</b> {{gender}} </div> 
-               <div><b>Age:</b> {{age}} </div>            
+               <div><b>Age:</b> {{age}} </div> 
+               
+                 
              
              <br>
 
             
                {{#each mutual_friends}}
-             
+            
+                <div><i>Mutual_friends:</i></div> 
                <div><b>ID:</b> {{id}} </div>        
                <div><b>Name:</b> {{name}} </div> 
                 <div><b>Gender:</b> {{gender}} </div> 
-               <div><b>Age:</b> {{age}} </div> 
+               <div><b>Age:</b> {{age}} </div>   
              
              {{/each}}
+              
             <br>
-
+              
+               <ul>
                {{#each groups}}
-             
+                <div><i>Groups:</i></div> 
                <div><b>ID:</b> {{id}} </div>        
                <div><b>Name:</b> {{name}} </div> 
                 <div><b>Description:</b> {{description}} </div> 
                 <br>
+                
 
                {{#each members}}
+              <div><i>Members:</i></div> 
                <div><b>ID:</b> {{id}} </div>        
                <div><b>Name:</b> {{name}} </div> 
                 <div><b>Gender:</b> {{gender}} </div> 
@@ -50,10 +64,12 @@
               
 
                {{#each members}}
+                <div><i>Members:</i></div> 
                <div><b>ID:</b> {{id}} </div>        
                <div><b>Name:</b> {{name}} </div> 
                 <div><b>Gender:</b> {{gender}} </div> 
                <div><b>Age:</b> {{age}} </div> 
+               </ul>
 
               {{/each}}
              {{/each}}
@@ -61,6 +77,7 @@
            {{/each}}
             {{/each}}
           </ul>   
+          </ul> 
       </section>
    </main>
 </div>
