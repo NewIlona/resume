@@ -1,0 +1,71 @@
+<div> 
+    {{#with web}}
+    <main>
+        <div>
+         <section>
+           <section>
+            {{#each languages}}
+            <div><b>Name:</b> {{name}}</div>
+            <div><b>Version:</b> {{version}}</div>
+            <div><b>Description:</b> {{description}}</div>
+            <br>
+            
+          </section>
+          
+           <section>
+            {{#each elements}}
+            <div> <b>Name:</b>{{name}}</div>
+            <div> <b>Description:</b> {{description}} </div>
+           
+          
+            {{#each attributes }}
+            <div> <b>Name:</b>{{name}}</div>
+            <div> <b>Description:</b> {{description}} </div>
+            <br>
+            {{/each}}
+            {{/each}} 
+            </section>
+
+            <section>
+             {{#each properties }}
+           
+            <div> <b>Name:</b>{{name}}</div>
+            <div> <b>Description:</b> {{description}} </div>
+            <br>
+             
+            {{#each values }}
+            <div> <b>Value:</b>{{value}}</div>
+            <div> <b>Description:</b> {{description}} </div>
+            <br>
+            {{/each}}
+            {{/each}} 
+
+
+            
+            {{#each functions}}
+            <div> <b>Name:</b>{{name}}</div>
+            <div> <b>Description:</b> {{description}} </div>
+             <br>
+          
+            {{#each parameters }}
+            <div> <b>Name:</b>{{name}}</div>
+            <div> <b>Type:</b>{{type}}</div>
+            <div> <b>Description:</b> {{description}} </div>
+            <br>
+            {{/each}}
+            {{/each}} 
+             
+
+
+            </section>
+            
+            <br> 
+            <hr>
+            {{/each}}
+            </div>
+            <br>
+            </main>
+   {{/with}}
+        <br>
+ </section>
+</div>
