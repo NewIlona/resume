@@ -1,0 +1,66 @@
+<div> 
+   <main>
+      <section>
+         <ul>
+             {{> title data= "Facebook"}}
+             <hr>
+            {{#each users}}
+            
+            <br>
+               <div><b>ID:</b> {{id}} </div>        
+               <div><b>Name:</b> {{name}} </div>
+               <div><b>Gender:</b> {{gender}} </div> 
+               <div><b>Age:</b> {{age}} </div> 
+               <br>
+
+
+                {{#each friends}}
+              
+               <div><b>ID:</b> {{id}} </div>        
+               <div><b>Name:</b> {{name}} </div> 
+               <div><b>Gender:</b> {{gender}} </div> 
+               <div><b>Age:</b> {{age}} </div>            
+             
+             <br>
+
+            
+               {{#each mutual_friends}}
+             
+               <div><b>ID:</b> {{id}} </div>        
+               <div><b>Name:</b> {{name}} </div> 
+                <div><b>Gender:</b> {{gender}} </div> 
+               <div><b>Age:</b> {{age}} </div> 
+             
+             {{/each}}
+            <br>
+
+               {{#each groups}}
+             
+               <div><b>ID:</b> {{id}} </div>        
+               <div><b>Name:</b> {{name}} </div> 
+                <div><b>Description:</b> {{description}} </div> 
+                <br>
+
+               {{#each members}}
+               <div><b>ID:</b> {{id}} </div>        
+               <div><b>Name:</b> {{name}} </div> 
+                <div><b>Gender:</b> {{gender}} </div> 
+               <div><b>Age:</b> {{age}} </div> 
+               <br>
+              
+
+               {{#each members}}
+               <div><b>ID:</b> {{id}} </div>        
+               <div><b>Name:</b> {{name}} </div> 
+                <div><b>Gender:</b> {{gender}} </div> 
+               <div><b>Age:</b> {{age}} </div> 
+
+              {{/each}}
+             {{/each}}
+            {{/each}}
+           {{/each}}
+            {{/each}}
+          </ul>   
+      </section>
+   </main>
+</div>

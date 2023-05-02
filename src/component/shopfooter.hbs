@@ -1,0 +1,17 @@
+<section class="row col-10 container-fluid m-auto">    
+     {{#each footer}}
+        <ol  class="nav column col-2 row container-fluid m-auto"> 
+     {{#each this}}
+     {{#if @last}}
+        <li class="nav-link">
+             <a class="nav-link disabled" href="{{href}}">{{text}}</a>
+        </li> 
+        {{else}}
+        <li class="nav-link">
+             <a class="nav-link" href="{{href}}">{{text}}</a>
+        </li>
+        {{/if}}
+         {{/each}}
+            </ol> 
+        {{/each}}
+</section>
