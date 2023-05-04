@@ -1,0 +1,37 @@
+<div class="card p-3" style="background-color:rgba(250, 235, 215, 0.158)">
+          {{#if img}}       
+  <img src="{{image}}" class="card-img-top" alt="{{title}}">
+  {{/if}}
+  {{#if image}}
+       <img src="{{image}}" class="card-img-top" alt="{{title}}">
+  {{/if}}
+  {{#if photo}}
+    <div class="row">
+    <div class="col-8 rounded ">
+       <img src="{{photo}}" class="card-img-top rounded border" alt="{{name}}">
+       </div>
+       </div>
+  {{/if}} 
+  <div class="card-body">
+    {{#if name}}
+    <h3>{{name}}</h3>
+    {{/if}}
+
+    {{#if title}}
+    <h5 class="card-title">
+        {{title}}
+      {{#if idNew}} 
+       <span class="badge bg-success rounded-pill fs-6 fw-bold"> NEW  </span>
+{{/if}}
+{{#if isNew}} 
+          <span class="badge bg-success rounded-pill fs-6 fw-bold"> NEW  </span>
+      {{/if}} 
+       {{#if isHot}} 
+          <span class="badge bg-primary rounded-pill fs-6 fw-bold"> TOP  </span>
+      {{/if}}
+      </h5>
+      {{/if}}
+    <p class="card-text">{{description}}</p>
+  </div>
+
+  </div>
