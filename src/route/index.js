@@ -5,10 +5,10 @@ const router = express.Router()
 
 
 // ================================================================
-  var header = { 
-	name:{
-  firstname: `Ivan`,
-  lastname: `Ivanov`,
+var header = { 
+    name:{
+  firstname: `Ilona`,
+  lastname: `Balika`,
 },
 
 position: `Junior Fullstack JS Developer`,
@@ -16,32 +16,137 @@ sallary: `600$ в місяць`,
 address: `Ukraine, Izmail`,
 }
 var footer = {
-	social:{
-		email: {
-		  text: `ivanov@mail.co`,
-		  href: `mailto:ivanov@mail.com`,
-		},
-		phone:{
-		  text:`+380670000123`,
-		  href:`tel:+380670000123`,
-		},
-		linkedin: {
-		  text:`LinkedIn`,
-		  href: `https://www.linkedin.com/in/dmytro-test`,
-		},
-	  },
-	}
+    social:{
+        email: {
+          text: `balikailona99@gmail.co`,
+          href: `mailto:balikailona99@mail.com`,
+        },
+        phone:{
+          text:`+380968774757`,
+          href:`tel:+380968774757`,
+        },
+        linkedin: {
+          text:`LinkedIn`,
+          href: `https://www.linkedin.com/in/ilona-test`,
+        },
+      },
+    }
+    var title = {
+        title: 'Resume',
+        big: true,
+      }
 // ================================================================
 
 // router.get Створює нам один ентпоїнт
 
 //           ↙ тут вводимо шлях (PATH) до сторінки
-router.get('/', function (req, res) {
+router.get('/index', function (req, res) {
   // res.render генерує нам HTML сторінку
 
   //            ↙ cюди вводимо назву файлу з сontainer
-  res.render('index', {})
-  //                  ↑↑ сюди вводимо JSON дані
+  res.render('index', {
+	layout: 'index',
+    title: 'Resume project',
+      name: {
+      first: 'Ilona',
+      last: 'Balika',
+    },
+    page: {
+      about: [
+      {
+        link: '/summary',
+        text: 'Summary',
+        isMain: true,
+      },
+      {
+        link: '/work',
+        text: 'Work',
+        isMain: true,
+      },
+      {
+        link: '/education',
+        text: 'Education',
+        isMain: true,
+      },
+      {
+        link: '/skills',
+        text: 'Skills',
+        isMain: true,
+      },
+      {
+        link: '/facebook',
+        text: 'Facebook',
+        isMain: true,
+      },
+      {
+        link: '/program',
+        text: 'Program',
+        isMain: true,
+      },  
+      ],
+      it: [
+      {
+        link: '/js',
+        text: 'JS',
+        isMain: true,
+      },
+      {
+        link: '/web',
+        text: 'Web',
+        isMain: true,
+      }, 
+	  {
+        link: '/task12',
+        text: 'Advertising',
+        isMain: true,
+      },
+      {
+        link: '/task22',
+        text: 'Innovation',
+        isMain: true,
+      },
+      {
+        link: '/task31',
+        text: 'City list',
+        isMain: true,
+      },
+    ],
+    shop: [
+      {
+        link: '/car',
+        text: 'Car',
+        isMain: true,
+      },
+      {
+        link: '/mac',
+        text: 'MacBook',
+        isMain: true,
+      },
+      {
+        link: '/shophome',
+        text: 'Shop',
+        isMain: true,
+      },
+      
+      {
+        link: '/shopproduct',
+        text: 'Shopproduct',
+        isMain: true,
+      },
+      {
+        link: '/shopreview',
+        text: 'shopreview',
+        isMain: true,
+      },
+      {
+        link: '/shopcart',
+        text: 'Shopcart',
+        isMain: true,
+      },
+    ],
+  },
+  })
+
 })
 
 // ================================================================
